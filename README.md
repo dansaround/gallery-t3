@@ -5,8 +5,8 @@
 - [x] Deploy | vercel
 - [x] Scaffold ui with mock data
 - [x] Tidy Up Build Process
-- [ ] Set database | vercel postgress
-- [ ] Integrate database to UI
+- [x] Set database | vercel postgress
+- [x] Integrate database to UI
 - [ ] Authentication | Clerk
 - [ ] Add image upload
 - [ ] Error management | Sentry
