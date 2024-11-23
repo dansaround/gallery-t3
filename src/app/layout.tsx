@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
+        {/*  Makes sure generated button from uploadThing shows from server side */}
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <body className={`flex flex-col gap-4 font-sans`}>
           <TopNav />
