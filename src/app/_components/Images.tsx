@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { db } from "~/server/db";
 import { getMyImages } from "~/server/queries";
 
@@ -5,20 +6,17 @@ export default async function Images() {
   const images = await getMyImages();
 
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap justify-center gap-7">
       {images.map((image, index) => (
-        <div
-          key={image.id}
-          className="flex w-72 flex-col rounded-md bg-blue-950 p-5"
-        >
-          <img
+        <div key={image.id} className="flex h-48 w-48 flex-col">
+          <Image
+            width={192}
+            height={192}
             src={image.url}
-            alt={`Image ${image.id}`}
-            className="h-62 mb-4 w-full object-cover"
+            alt={`Image ${image.name}`}
+            style={{ objectFit: "contain" }}
           />
-          <div className="flex h-full w-full place-items-center text-wrap break-words border-t">
-            {image.name}
-          </div>
+          <div className="text-wrap break-words">{image.name}</div>
         </div>
       ))}
     </div>
