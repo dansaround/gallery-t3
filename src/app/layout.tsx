@@ -16,7 +16,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+  modal,
+}: {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}) {
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
@@ -24,9 +28,11 @@ export default function RootLayout({
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <body className={`flex flex-col gap-4 font-sans`}>
           <TopNav />
-          {children}
+          <main>{children}</main>
+          {modal}
+          <div id="modal-root" />
         </body>
       </html>
-    </ClerkProvider>
+     </ClerkProvider>
   );
 }
