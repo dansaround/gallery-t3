@@ -26,10 +26,10 @@ export default function RootLayout({
       <html lang="en" className={`${GeistSans.variable}`}>
         {/*  Makes sure generated button from uploadThing shows from server side */}
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
-        <body className={`font-sans`}>
+        <body className="font-sans">
           <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
-            <main className="overflow-y-scroll">{children}</main>
+            <main className="">{children}</main>
           </div>
           {modal}
           <div id="modal-root" />
