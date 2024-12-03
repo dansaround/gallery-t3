@@ -15,6 +15,6 @@
 - [x] Routing/image page (parallel route)
 - [x] Update upload button
 - [x] Add ShadUI (for toast)
-- [ ] Delete button | Server ACtions
 - [ ] Analytics | posthog
+- [ ] Delete button | Server ACtions
 - [ ] Ratelimiting | upstash
