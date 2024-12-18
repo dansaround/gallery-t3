@@ -18,3 +18,10 @@
 - [x] Analytics | posthog
 - [x] Delete button | Server ACtions
 - [x] Ratelimiting | upstash
+
+## Could add
+
+- [ ] Selecting multiple images
+- [ ] Infinite scroll
+- [ ] Add albums
+- [ ] delete images from uploadthing as well
