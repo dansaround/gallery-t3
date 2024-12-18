@@ -16,5 +16,5 @@
 - [x] Update upload button
 - [x] Add ShadUI (for toast)
 - [x] Analytics | posthog
-- [ ] Delete button | Server ACtions
-- [ ] Ratelimiting | upstash
+- [x] Delete button | Server ACtions
+- [x] Ratelimiting | upstash
